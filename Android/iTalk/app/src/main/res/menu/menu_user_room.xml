@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context="com.example.gagan.italk.UserRoom">
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_logout" android:title="Logout"
+        android:orderInCategory="101" app:showAsAction="never" />
+    <group >
+        <item android:id="@+id/action_showDP" android:title="Show My DP"
+            android:orderInCategory="101" app:showAsAction="never" />
+        <item android:id="@+id/action_changeDP" android:title="Change DP"
+            android:orderInCategory="101" app:showAsAction="never" />
+        <item android:id="@+id/action_changeNname" android:title="Change NickName"
+            android:orderInCategory="102" app:showAsAction="never" />
+        <item android:id="@+id/action_changePwd" android:title="Change Password"
+            android:orderInCategory="103" app:showAsAction="never" />
+    </group>
+</menu>

@@ -1,0 +1,165 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="com.example.gagan.italk.chatRoom" >
+
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/t1"
+    android:paddingTop="@dimen/abc_action_bar_default_height_material"
+    >
+
+    <FrameLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="5dp"
+        android:layout_marginBottom="3dp"
+        >
+
+    <ListView
+        android:paddingRight="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stackFromBottom="true"
+        android:fastScrollEnabled="true"
+        android:id="@+id/id_chatroom_lv_chat"
+        android:divider="#000"
+        android:fastScrollAlwaysVisible="false" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_dropdown_light_frame">
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="match_parent"
+            android:src="@android:drawable/stat_sys_upload"
+            android:visibility="gone"
+            android:tint="#ff37d5ff"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/id_chatroom_iv_isUploading"/>
+        <EditText
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type Message Here"
+            android:maxLines="4"
+            android:id="@+id/id_chatroom_et_msg"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@android:drawable/ic_menu_send"
+            android:id="@+id/id_chatroom_b_send"/>
+
+        </LinearLayout>
+</LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/cr_action_bar_optionContainer"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/abc_action_bar_default_height_material">
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"
+            android:id="@+id/cr_action_bar_process"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_height="match_parent"
+            android:src="@android:drawable/ic_menu_more"
+            android:id="@+id/cr_action_bar_more"
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_height="match_parent"
+            android:id="@+id/cr_action_bar_options"
+            android:src="@drawable/abc_ic_menu_moreoverflow_mtrl_alpha"
+            android:tint="#111"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:layout_toLeftOf="@+id/cr_action_bar_optionContainer"
+        >
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/abc_ic_ab_back_mtrl_am_alpha"
+            android:tint="#111"
+            android:background="@android:color/transparent"
+            android:paddingRight="3dp"
+            android:id="@+id/cr_action_bar_back"/>
+
+        <FrameLayout
+
+            android:layout_marginRight="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:background="@drawable/dp_image_background">
+            <ImageButton
+                android:layout_width="@dimen/abc_action_bar_default_height_material"
+                android:layout_height="@dimen/abc_action_bar_default_height_material"
+                android:background="@drawable/no_dp"
+                android:id="@+id/cr_action_bar_dp"
+                android:scaleType="centerCrop"/>
+        </FrameLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/abc_action_bar_default_height_material">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nickname"
+                android:textSize="20dp"
+                android:id="@+id/cr_action_bar_nn"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="2dp"
+                android:textColor="#000"
+                android:singleLine="true"
+                />
+            <TextView
+                android:singleLine="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cr_action_bar_un"
+                android:textColor="#333"
+                android:text="Username (Last Login)"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="@dimen/abc_action_bar_default_height_material"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Load More"
+        android:alpha="0.5"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:visibility="visible"
+        android:gravity="center_horizontal"
+        android:textColor="#FFF"
+        android:background="#333"
+        android:id="@+id/id_chatroom_tv_loadmore"
+        />
+</RelativeLayout>

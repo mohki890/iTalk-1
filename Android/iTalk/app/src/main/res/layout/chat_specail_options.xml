@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/abc_search_url_text_normal">
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/camera"
+            android:id="@+id/ib_cso_camera"/>
+        <ImageButton
+            android:id="@+id/ib_cso_cvideo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/video"/>
+        <ImageButton
+            android:padding="5dp"
+            android:id="@+id/ib_cso_file"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/attachment"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/ib_cso_gallery"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/photosicon"/>
+
+        <ImageButton
+            android:id="@+id/ib_cso_gvideo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/video_pick"/>
+    </LinearLayout>
+</LinearLayout>

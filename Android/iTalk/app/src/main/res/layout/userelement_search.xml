@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/userelement_background"
+    >
+    <!--android:background="@android:drawable/editbox_dropdown_light_frame"-->
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foreground="@drawable/dp_image_background"
+        android:layout_margin="5dp"
+        android:padding="1dp"
+        android:id="@+id/frameLayout">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:contentDescription="Image"
+            android:scaleType="centerCrop"
+            android:id="@+id/ues_dp"
+            android:background="@drawable/no_dp"
+            />
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/frameLayout"
+        android:layout_toEndOf="@+id/frameLayout"
+        android:paddingLeft="15dp"
+        >
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:paddingTop="3dp"
+
+            android:textColor="#000"
+            android:text="Username"
+            android:id="@+id/ues_nname"/>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="5dp"
+
+            android:textColor="#333"
+            android:text="Nickname"
+            android:id="@+id/ues_uname"/>
+
+    </LinearLayout>
+</RelativeLayout>

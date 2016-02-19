@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/userelement_background"
+    >
+    <!--android:background="@android:drawable/editbox_dropdown_light_frame"-->
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foreground="@drawable/dp_image_background"
+        android:layout_margin="5dp"
+        android:padding="1dp"
+        android:id="@+id/frameLayout">
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:contentDescription="Image"
+        android:scaleType="centerCrop"
+        android:id="@+id/id_userhome_iv_listUser_dp"
+        android:background="@drawable/no_dp"
+        />
+    </FrameLayout>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:paddingTop="3dp"
+        android:paddingLeft="15dp"
+
+        android:textColor="#000"
+        android:text="Some User"
+        android:id="@+id/id_userhome_tv_listUser_text"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/frameLayout"
+        android:singleLine="true"
+        android:layout_marginBottom="5dp"
+        android:layout_alignBaseline="@id/frameLayout"
+        android:layout_toLeftOf="@+id/id_userhome_tv_listUser_lastMessageTime"
+        android:layout_toStartOf="@+id/id_userhome_tv_listUser_lastMessageTime"
+        />
+
+   <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/presence_online"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+       android:layout_marginTop="5dp"
+       android:layout_alignTop="@id/id_userhome_tv_listUser_text"
+        android:layout_gravity="center"
+        android:id="@+id/id_userhome_iv_listUser_isOnline"
+
+        />
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/abc_ic_go_search_api_mtrl_alpha"
+        android:tint="#AAA"
+        android:id="@+id/id_userhome_iv_listUser_lastMessageIsSend"
+
+        android:visibility="visible"
+        android:layout_alignTop="@+id/id_userhome_tv_listUser_lastMessageTime"
+        android:layout_toRightOf="@+id/frameLayout"
+        android:layout_toEndOf="@+id/frameLayout" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/id_userhome_tv_listUser_text"
+        android:id="@+id/linearLayout4"
+        android:layout_toLeftOf="@+id/id_userhome_tv_listUser_lastMessageTime"
+        android:layout_toRightOf="@+id/frameLayout"
+        android:layout_toEndOf="@+id/frameLayout">
+    <ImageView
+        android:paddingTop="3dp"
+        android:src="@android:drawable/stat_sys_download_done"
+        android:tint="#ff93d08a"
+        android:id="@+id/id_userhome_iv_listUser_lastMessageType"
+        android:layout_width="wrap_content"
+        android:visibility="visible"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/id_userhome_tv_listUser_lastMessage"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:paddingTop="3dp"
+        android:paddingLeft="3dp"
+        android:textColor="#555"
+        android:text="Last Message"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/id_userhome_tv_listUser_lastMessage"
+        android:singleLine="true"
+        />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:textColor="#777"
+        android:text="Time"
+        android:id="@+id/id_userhome_tv_listUser_lastMessageTime"
+        android:layout_alignBottom="@+id/linearLayout4"
+        android:layout_alignRight="@+id/id_userhome_iv_listUser_isOnline"
+        android:layout_alignEnd="@+id/id_userhome_iv_listUser_isOnline"
+        android:layout_marginBottom="5dp"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <LinearLayout
+        android:background="@drawable/italk_back"
+        android:orientation="horizontal"
+        android:layout_width="@dimen/dialog_fixed_width_minor"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" i"
+
+
+            android:textSize="@dimen/abc_text_size_display_2_material"
+            android:textColor="#ff9f00c3"
+            android:textStyle="italic|bold"
+            android:autoText="false"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Talk "
+
+            android:textSize="@dimen/abc_text_size_display_2_material"
+            android:textColor="#000000"
+            android:autoText="false"
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/italk_login_back">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:singleLine="true"
+        android:background="@android:drawable/editbox_background"
+        android:id="@+id/id_et_username"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:background="@android:drawable/editbox_background"
+        android:password="true"
+        android:singleLine="true"
+        android:id="@+id/id_et_pwd"/>
+    <Button
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/id_b_login"/>
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
