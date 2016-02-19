@@ -1,0 +1,10 @@
+<#if licenseFirst??>
+${licenseFirst}
+</#if>
+${licensePrefix}Project	: iTalk
+${licensePrefix}		talking is life ....
+${licensePrefix}	(By gagan1kumar)
+<#if licenseLast??>
+${licenseLast}
+</#if>
+

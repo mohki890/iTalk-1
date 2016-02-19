@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+Project	: iTalk
+                talking is life ....
+        (By gagan1kumar)
+-->
+<html>
+    <head><title>iTalk</title></head>
+    <body>
+        <h1>Add User</h1>
+        <form method="POST" action="addUser.php">
+            
+            <input type="text" maxlength="64" placeholder="Authority Username" name="Auser" tabindex="1">
+            <input type="password" maxlength="64" placeholder="Authority Password" name="Apwd" tabindex="2">
+           <!-- <br>
+            <input type="text" maxlength="64" placeholder="Username" name="user" tabindex="1">
+            <input type="password" maxlength="64" placeholder="Password(Default Username)" name="pwd" tabindex="2">
+           --> 
+           <br>
+          
+           <input type="text" placeholder="Add Multiple User Seperated By Comma(,)" name="multiUser" tabindex="3">
+            <br>
+            <input type="hidden" name="redirect">
+            <input type="submit" value="Add User" tabindex="5">
+        </form>
+    </body>
+</html>
+
+
